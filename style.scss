@@ -11,6 +11,18 @@
     font-family :nothing;
     src: url(/fonts/BitcountPropSingleInk-VariableFont_CRSV\,ELSH\,ELXP\,SZP1\,SZP2\,XPN1\,XPN2\,YPN1\,YPN2\,slnt\,wght.ttf);
 }
+
+@mixin flex-colomn($gap: 0rem){
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+// @mixin flex-center($gap:0rem){
+//   display: flex;
+//   j
+// }
+
 *{
   margin: 0;
   padding: 0;
@@ -41,8 +53,8 @@ html, body {
   align-items: center;
   color: white;
   text-decoration: none;
-  padding: 1.5rem 1.7rem;
-
+  padding: 1.5rem 1rem;
+  margin-top: 0.5rem;
   .navlogo {
       h1{
        font-weight: 100;
@@ -55,17 +67,17 @@ html, body {
     a{
       text-decoration: none;
       color: white;
-      font-size: 1.5rem;
-      padding: 0.7rem 0.7rem;
+      padding: 0.8rem 1rem;
       background-color: #1E1E1E;
       border-radius: 10px;
       font-family: robot;
 
       a:nth-child(1){
         gap: 1rem;
+        font-size: 0.5rem;
       }
       span{
-        padding: 0rem 0.4rem;
+        padding: 0rem 0.2rem;
         background-color: orange;
         border-radius: 45%;
       }
@@ -80,10 +92,9 @@ html, body {
 
 section{
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  @include flex-column(1rem);
+
   padding: 1rem 1rem;
-  gap: 1rem;
   border-radius: 25px;
   
   .main1upper{
@@ -97,14 +108,52 @@ section{
   .main1lower{
     background-color: #1E1E1E;
     border-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+    padding: 1.5rem;
+    @include flex-column(4rem);
+
+    p{
+      font-family: robot;
+    }
 
     .text1{
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
+      @include flex-column(0.6rem);
+      
+      h1{
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      p{
+        line-height: 1.5;
+        font-size: 1rem;
+        font-family: chillax;
+        color: #92918E;
+        opacity: 0.8;
+      }
+      
+      button{
+        padding-top: 1rem;
+        height: 1.5rem;
+        width: fit-content;
+        background-color: #1E1E1E;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-family: chillax;
+
+        i{
+          color: white;
+          padding: 1rem 1rem;
+          background-color: #292929;
+          border-radius: 50%;
+          border: 1px solid rgb(88, 88, 88);
+          margin-top: 1rem 1rem;
+        }
+      }
     }
   }
 }

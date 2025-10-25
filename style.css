@@ -36,7 +36,8 @@ html, body {
   align-items: center;
   color: white;
   text-decoration: none;
-  padding: 1.5rem 1.7rem;
+  padding: 1.5rem 1rem;
+  margin-top: 0.5rem;
 }
 .navbar .navlogo h1 {
   font-weight: 100;
@@ -48,17 +49,17 @@ html, body {
 .navbar .navright a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
-  padding: 0.7rem 0.7rem;
+  padding: 0.8rem 1rem;
   background-color: #1E1E1E;
   border-radius: 10px;
   font-family: robot;
 }
 .navbar .navright a a:nth-child(1) {
   gap: 1rem;
+  font-size: 0.5rem;
 }
 .navbar .navright a span {
-  padding: 0rem 0.4rem;
+  padding: 0rem 0.2rem;
   background-color: orange;
   border-radius: 45%;
 }
@@ -70,8 +71,8 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem;
   gap: 1rem;
+  padding: 1rem 1rem;
   border-radius: 25px;
 }
 section .main1upper {
@@ -84,12 +85,51 @@ section .main1upper img {
 section .main1lower {
   background-color: #1E1E1E;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  gap: 4rem;
+}
+section .main1lower p {
+  font-family: robot;
 }
 section .main1lower .text1 {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+}
+section .main1lower .text1 h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section .main1lower .text1 p {
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: chillax;
+  color: #92918E;
+  opacity: 0.8;
+}
+section .main1lower .text1 button {
+  padding-top: 1rem;
+  height: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #1E1E1E;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: chillax;
+}
+section .main1lower .text1 button i {
+  color: white;
+  padding: 1rem 1rem;
+  background-color: #292929;
+  border-radius: 50%;
+  border: 1px solid rgb(88, 88, 88);
+  margin-top: 1rem 1rem;
 }/*# sourceMappingURL=style.css.map */
