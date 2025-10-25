@@ -1,17 +1,15 @@
 @font-face {
     font-family :robot;
-    src: url(/font\ assets/);
+    src: url(./fonts/RobotoMono-VariableFont_wght.ttf);
 
 }
 @font-face {
-    font-family: 'FontName';
-    src: url('FileName.eot');
-    src: url('FileName.eot?#iefix') format('embedded-opentype'),
-         url('FileName.woff') format('woff'),
-         url('FileName.ttf') format('truetype'),
-         url('FileName.svg#FontName') format('svg');
-    font-style: normal;
-    font-weight: normal;
+    font-family :chillax;
+    src: url(/fonts/Chillax-Regular.otf);
+}
+@font-face {
+    font-family :nothing;
+    src: url(/fonts/BitcountPropSingleInk-VariableFont_CRSV\,ELSH\,ELXP\,SZP1\,SZP2\,XPN1\,XPN2\,YPN1\,YPN2\,slnt\,wght.ttf);
 }
 *{
   margin: 0;
@@ -19,9 +17,94 @@
   box-sizing: border-box;
 }
 
-
 html, body {
-  font-family:  sans-serif;
-  height: 100%;
+  font-family:chillax;
+  height: 100%; 
   width:100%;
+  background-color: #121212;
+  color: white;
+}
+@mixin flex-column($gap:0rem){
+  display: flex;
+  flex-direction: column;
+  gap :$gap;
+}
+
+.header{
+  padding-top: 10rem;
+}
+.navbar{
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem 1.7rem;
+
+  .navlogo {
+      h1{
+       font-weight: 100;
+       font-size: 1.5rem;
+    }
+  }
+
+  .navright {
+    gap:10rem;
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      padding: 0.7rem 0.7rem;
+      background-color: #1E1E1E;
+      border-radius: 10px;
+      font-family: robot;
+
+      a:nth-child(1){
+        gap: 1rem;
+      }
+      span{
+        padding: 0rem 0.4rem;
+        background-color: orange;
+        border-radius: 45%;
+      }
+      a:nth-child(2){
+        font-size: 5rem;
+      }
+
+    }
+  }
+  
+}
+
+section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  gap: 1rem;
+  border-radius: 25px;
+  
+  .main1upper{
+    width: 100%;
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }  
+  }
+
+  .main1lower{
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .text1{
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+  }
 }
