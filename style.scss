@@ -176,41 +176,15 @@ main {
       }
     }
   }
-      /* ---------- MEDIA QUERY ---------- */
+      /* ---------- stat QUERY ---------- */
   .stats{
-    @include flex-column(1rem);
-    width: 100%;
-    padding: 1rem;
-    
-    
-    .statsup,.statsdown{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      
-      
-      .element{
-        text-align: center;
-        text-transform: uppercase;
-        gap: 1rem;
-        // align-items: center;
-
-        small{
-          font-family: robot;
-          color: #92918E;
-          font-size: 1rem;
-          opacity: 0.8;
-        }
-
-        h1{
-          color: #F4F2ED;
-          font-size: 2rem;
-          opacity: 0.9;
-        }
-      }
-    }
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: center;
+}
+  
 
 } //main end
 
@@ -246,21 +220,8 @@ main {
       }
     }
   }
-  .stats{
-    // display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  
+  .statsup{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-     gap: 2rem;
-
-    .statsup,
-    .statsdown {
-      flex: 1;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
   }
 }

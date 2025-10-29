@@ -35,7 +35,7 @@ main {
   gap: 0rem;
   align-items: center;
   /* ---------- HERO SECTION ---------- */
-  /* ---------- MEDIA QUERY ---------- */
+  /* ---------- stat QUERY ---------- */
 }
 main .hero {
   width: 100%;
@@ -153,33 +153,11 @@ main .hero section .main1lower .text1 button i {
   border: 1px solid rgb(88, 88, 88);
 }
 main .stats {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   width: 100%;
-  padding: 1rem;
-}
-main .stats .statsup, main .stats .statsdown {
   display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-main .stats .statsup .element, main .stats .statsdown .element {
-  text-align: center;
-  text-transform: uppercase;
-  gap: 1rem;
-}
-main .stats .statsup .element small, main .stats .statsdown .element small {
-  font-family: robot;
-  color: #92918E;
-  font-size: 1rem;
-  opacity: 0.8;
-}
-main .stats .statsup .element h1, main .stats .statsdown .element h1 {
-  color: #F4F2ED;
-  font-size: 2rem;
-  opacity: 0.9;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: center;
 }
 
 @media (min-width: 900px) {
@@ -207,7 +185,7 @@ main .stats .statsup .element h1, main .stats .statsdown .element h1 {
     width: 80%;
     font-size: 1rem;
   }
-  .stats {
-    flex-direction: row;
+  .statsup {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
