@@ -1,3 +1,6 @@
+// irshad
+
+
 @font-face {
   font-family: robot;
   src: url(./fonts/RobotoMono-VariableFont_wght.ttf);
@@ -44,6 +47,7 @@ body {
 }
 
 /* ---------- MAIN LAYOUT ---------- */
+
 main {
     max-width: 1600px;
     @include flex-column(0rem);
@@ -137,6 +141,7 @@ main {
         .text1 {
           @include flex-column(0.6rem);
 
+
           h1 {
             font-weight: 500;
             text-transform: uppercase;
@@ -176,16 +181,79 @@ main {
       }
     }
   }
-      /* ---------- stat QUERY ---------- */
+      /* ---------- stat section---------- */
   .stats{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 2rem;
-  justify-content: center;
-}
-  
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+    // background-color: red;
+    // gap:2rem;
 
+    .element{
+      text-align: center;
+      margin: 0.5rem 2rem;
+      text-transform: uppercase;
+      padding-top: 1.5rem;
+      
+      small{
+        font-family: robot;
+        font-size: 1rem;
+        color: #92918E;
+        opacity: 0.5;
+      }
+      h1{
+        font-size: 2rem;
+        color:#F4F2ED;
+      }
+    }
+  }
+  // ------------------view3--------------- //
+   .view3{
+      // display: flex;
+      // flex-direction: column;
+      // gap: 1rem;
+      padding: 1rem;
+
+      .imgview3 img{
+        width: 100%;
+        border-radius: 10px;
+      
+      }
+
+      .infoview3{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        background-color: #1E1E1E;
+        // margin-top: 1rem;
+        padding: 1.5rem 1.5rem;
+        border-radius: 10px;
+        gap: 2.5rem;
+
+        p{
+          font-family: robot;
+        }
+
+        .lv3-text{
+          @include flex-column(0.6rem);
+
+          h1 {
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+
+          p {
+            line-height: 1.5;
+            font-size: 1rem;
+            font-family: chillax;
+            color: #92918e;
+            opacity: 0.8;
+          }
+        }
+      }
+   } 
 } //main end
 
 
@@ -222,6 +290,57 @@ main {
   }
   
   .statsup{
+    width: 100%;  
     display: flex;
+    justify-content: space-evenly;
+
+    .element{
+      padding-right: 2rem;
+    }
+  }
+
+  .view3{
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: stretch;
+     gap: 1rem;
+
+    .imgview3{
+      width: 50%;
+      // background-color: red;
+      padding: 0;
+    }
+
+    .imgview3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    
+  }
+    .infoview3{
+      width: 50%;
+      // margin: 1rem 1rem;
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+
+    .infoview3 > p {
+    padding: 1.5rem 1rem; 
+    
+  }
+
+   .infoview3 .lv3-text h1 {
+    // margin-bottom: 1.5rem; 
+    font-size: 3rem;
+  }
+  .infoview3 .lv3-text p{
+    font-size: 2rem;
+  }
+
   }
 }

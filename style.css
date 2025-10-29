@@ -35,7 +35,7 @@ main {
   gap: 0rem;
   align-items: center;
   /* ---------- HERO SECTION ---------- */
-  /* ---------- stat QUERY ---------- */
+  /* ---------- stat section---------- */
 }
 main .hero {
   width: 100%;
@@ -159,6 +159,57 @@ main .stats {
   padding: 2rem;
   justify-content: center;
 }
+main .stats .element {
+  text-align: center;
+  margin: 0.5rem 2rem;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+}
+main .stats .element small {
+  font-family: robot;
+  font-size: 1rem;
+  color: #92918E;
+  opacity: 0.5;
+}
+main .stats .element h1 {
+  font-size: 2rem;
+  color: #F4F2ED;
+}
+main .view3 {
+  padding: 1rem;
+}
+main .view3 .imgview3 img {
+  width: 100%;
+  border-radius: 10px;
+}
+main .view3 .infoview3 {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #1E1E1E;
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+  gap: 2.5rem;
+}
+main .view3 .infoview3 p {
+  font-family: robot;
+}
+main .view3 .infoview3 .lv3-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+main .view3 .infoview3 .lv3-text h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .view3 .infoview3 .lv3-text p {
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: chillax;
+  color: #92918e;
+  opacity: 0.8;
+}
 
 @media (min-width: 900px) {
   .hero {
@@ -186,6 +237,44 @@ main .stats {
     font-size: 1rem;
   }
   .statsup {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
+  }
+  .statsup .element {
+    padding-right: 2rem;
+  }
+  .view3 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .view3 .imgview3 {
+    width: 50%;
+    padding: 0;
+  }
+  .view3 .imgview3 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .view3 .infoview3 {
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .view3 .infoview3 > p {
+    padding: 1.5rem 1rem;
+  }
+  .view3 .infoview3 .lv3-text h1 {
+    font-size: 3rem;
+  }
+  .view3 .infoview3 .lv3-text p {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
