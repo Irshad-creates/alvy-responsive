@@ -1,3 +1,431 @@
+// // irshad
+
+
+// @font-face {
+//   font-family: robot;
+//   src: url(./fonts/RobotoMono-VariableFont_wght.ttf);
+// }
+
+// @font-face {
+//   font-family: chillax;
+//   src: url(./fonts/Chillax-Regular.otf);
+// }
+
+// @font-face {
+//   font-family: nothing;
+//   src: url(./fonts/BitcountPropSingleInk-VariableFont_CRSV,ELSH,ELXP,SZP1,SZP2,XPN1,XPN2,YPN1,YPN2,slnt,wght.ttf);
+// }
+
+// /* ---------- MIXINS ---------- */
+// @mixin flex-column($gap: 0rem) {
+//   display: flex;
+//   flex-direction: column;
+//   gap: $gap;
+// }
+
+// @mixin flex-center($gap: 0rem) {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: $gap;
+// }
+
+// /* ---------- RESET ---------- */
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// html,
+// body {
+//   font-family: chillax;
+//   height: 100%;
+//   width: 100%;
+//   background-color: #121212;
+//   color: white;
+// }
+
+// /* ---------- MAIN LAYOUT ---------- */
+
+// main {
+//     max-width: 1600px;
+//     @include flex-column(0rem);
+//     align-items: center;
+
+
+//   /* ---------- HERO SECTION ---------- */
+//   .hero {
+//     width: 100%;
+//     @include flex-column(0rem);
+//     align-content: center;
+
+//     .header {
+//       padding-top: 10rem;
+//     }
+
+//     .navbar {
+//       height: 4rem;
+//       width: 100%;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       color: white;
+//       text-decoration: none;
+//       padding: 1.5rem 1rem;
+//       margin-top: 0.5rem;
+
+//       .navlogo {
+//         h1 {
+//           font-weight: 100;
+//           font-size: 1.5rem;
+//         }
+//       }
+
+//       .navright {
+//         display: flex;
+//         align-items: center;
+//         gap: 1rem;
+
+//         a {
+//           text-decoration: none;
+//           color: white;
+//           padding: 0.8rem 1rem;
+//           background-color: #1e1e1e;
+//           border-radius: 10px;
+//           font-family: robot;
+//         }
+
+//         a:nth-child(1) {
+//           font-size: 1rem;
+//           gap: 0.5rem;
+
+//           span {
+//             padding: 0.2rem 0.2rem;
+//             background-color: rgb(156, 121, 55);
+//             border-radius: 40%;
+//           }
+//         }
+
+//         a:nth-child(2) {
+//           font-size: 1rem;
+//         }
+//       }
+//     }
+
+//     section {
+//       width: 100%;
+//       @include flex-column(1rem);
+//       padding: 1rem 1rem;
+//       border-radius: 25px;
+
+//       .main1upper {
+//         width: 100%;
+
+//         img {
+//           width: 100%;
+//           border-radius: 10px;
+//           display: block;
+//         }
+//       }
+
+//       .main1lower {
+//         background-color: #1e1e1e;
+//         border-radius: 10px;
+//         padding: 1.5rem;
+//         @include flex-column(4rem);
+
+//         p {
+//           font-family: robot;
+//         }
+
+//         .text1 {
+//           @include flex-column(0.6rem);
+
+
+//           h1 {
+//             font-weight: 500;
+//             text-transform: uppercase;
+//           }
+
+//           p {
+//             line-height: 1.5;
+//             font-size: 1rem;
+//             font-family: chillax;
+//             color: #92918e;
+//             opacity: 0.8;
+//           }
+
+//           button {
+//             padding-top: 1rem;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             border: none;
+//             gap: 0.8rem;
+//             width: fit-content;
+//             background-color: #1e1e1e;
+//             color: white;
+//             border-radius: 5px;
+//             font-size: 1rem;
+//             font-family: chillax;
+
+//             i {
+//               color: white;
+//               padding: 0.8rem;
+//               background-color: #292929;
+//               border-radius: 50%;
+//               border: 1px solid rgb(88, 88, 88);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//       /* ---------- stat section---------- */
+//   .stats{
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+//     padding: 2rem;
+//     justify-content: center;
+//     // background-color: red;
+//     // gap:2rem;
+
+//     .element{
+//       text-align: center;
+//       margin: 0.5rem 2rem;
+//       text-transform: uppercase;
+//       padding-top: 1.5rem;
+      
+//       small{
+//         font-family: robot;
+//         font-size: 1rem;
+//         color: #92918E;
+//         opacity: 0.5;
+//       }
+//       h1{
+//         font-size: 2rem;
+//         color:#F4F2ED;
+//       }
+//     }
+//   }
+//   // ------------------view3--------------- //
+//    .view3{
+//       padding: 1rem;
+
+//       .imgview3 img{
+//         width: 100%;
+//         border-radius: 10px;
+      
+//       }
+
+//       .infoview3{
+//         display: flex;
+//         flex-direction: column;
+//         color: #fff;
+//         background-color: #1E1E1E;
+//         // margin-top: 1rem;
+//         padding: 1.5rem 1.5rem;
+//         border-radius: 10px;
+//         gap: 2.5rem;
+
+//         p{
+//           font-family: robot;
+//         }
+
+//         .lv3-text{
+//           @include flex-column(0.6rem);
+
+//           h1 {
+//             font-weight: 500;
+//             text-transform: uppercase;
+//           }
+
+//           p {
+//             line-height: 1.5;
+//             font-size: 1rem;
+//             font-family: chillax;
+//             color: #92918e;
+//             opacity: 0.8;
+//           }
+//         }
+//       }
+//    } 
+//  view 4  //
+//   .view4{
+//     padding: 1rem;
+
+//     .imgview4 img{
+//       width: 100%;
+//       border-radius: 10px;
+//       }
+
+//     .infoview4{
+//       display: flex;
+//       flex-direction: column;
+//       color: #fff;
+//       background-color: #1E1E1E;
+//       padding: 1.5rem 1.5rem;
+//       border-radius: 10px;
+//       gap: 2.5rem;
+
+//         p{
+//           font-family: robot;
+//         }
+
+//         .lv4-text{
+//           @include flex-column(0.6rem);
+
+//           h1 {
+//             font-weight: 500;
+//             text-transform: uppercase;
+//           }
+
+//         p {
+//           line-height: 1.5;
+//           font-size: 1rem;
+//           font-family: chillax;
+//           color: #92918e;
+//           opacity: 0.8;
+//         }
+//       }
+//     }
+//   }
+
+
+// }//main end
+
+
+
+
+// @media (min-width: 900px) {
+//   .hero {
+//     width: 100%;
+//     @include flex-column(1rem);
+    
+//     .main1 {
+//       flex-direction: row;
+//       gap: 1rem;
+
+//       .main1upper,
+//       .main1lower {
+//         width: 50%;
+//       }
+
+//       .main1lower {
+//         justify-content: space-between;
+
+//         .text1 {
+//           h1 {
+//             font-size: 2rem;
+//           }
+
+//           p {
+//             width: 80%;
+//             font-size: 1rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+  
+//   .statsup{
+//     width: 100%;  
+//     display: flex;
+//     justify-content: space-evenly;
+
+//     .element{
+//       padding-right: 2rem;
+//     }
+//   }
+
+//   .view3{
+//      display: flex;
+//      flex-direction: row-reverse;
+//      align-items: stretch;
+//      gap: 1rem;
+
+//     .imgview3{
+//       width: 50%;
+//       // background-color: red;
+//       padding: 0;
+//     }
+
+//     .imgview3 img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;  
+//     }
+//     .infoview3{
+//       width: 50%;
+//       // margin: 1rem 1rem;
+//       gap: 2rem;
+//       display: flex;
+//       flex-direction: column;
+//       // justify-content: center;
+//       justify-content: space-between;
+//       padding: 1rem;
+//     }
+//     .infoview3 > p {
+//       padding: 1.5rem 1rem; 
+//     }
+
+//     .infoview3 .lv3-text h1 {
+//     // margin-bottom: 1.5rem; 
+//     font-size: 3rem;
+//     }
+//     .infoview3 .lv3-text p{
+//       font-size: 2rem;
+//     }
+//   }
+
+//   // view 4 //
+
+  
+//   .view4{
+//      display: flex;
+//      flex-direction: row;
+//      align-items: stretch;
+//      gap: 1rem;
+
+//     .imgview4{
+//       width: 50%;
+//       // background-color: red;
+//       padding: 0;
+//     }
+
+//     .imgview4 img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;  
+//     }
+//     .infoview4{
+//       width: 50%;
+//       // margin: 1rem 1rem;
+//       gap: 2rem;
+//       display: flex;
+//       flex-direction: column;
+//       // justify-content: center;
+//       justify-content: space-between;
+//       padding: 1rem;
+//     }
+//     .infoview4 > p {
+//       padding: 1.5rem 1rem; 
+//     }
+
+//     .infoview4 .lv4-text h1 {
+//     // margin-bottom: 1.5rem; 
+//     font-size: 3rem;
+//     }
+//     .infoview4 .lv4-text p{
+//       font-size: 2rem;
+//     }
+//   }
+// }
+
+
+
 // irshad
 
 
@@ -44,6 +472,7 @@ body {
   width: 100%;
   background-color: #121212;
   color: white;
+  overflow-x: hidden;
 }
 
 /* ---------- MAIN LAYOUT ---------- */
@@ -52,6 +481,7 @@ main {
     max-width: 1600px;
     @include flex-column(0rem);
     align-items: center;
+
 
   /* ---------- HERO SECTION ---------- */
   .hero {
@@ -132,7 +562,7 @@ main {
         background-color: #1e1e1e;
         border-radius: 10px;
         padding: 1.5rem;
-        @include flex-column(4rem);
+        @include flex-column(3.2rem);
 
         p {
           font-family: robot;
@@ -199,7 +629,7 @@ main {
       
       small{
         font-family: robot;
-        font-size: 1rem;
+        font-size: .6rem;
         color: #92918E;
         opacity: 0.5;
       }
@@ -210,12 +640,18 @@ main {
     }
   }
   // ------------------view3--------------- //
-   .view3{
+  .view3{
       // display: flex;
       // flex-direction: column;
       // gap: 1rem;
-      padding: 1rem;
-
+      // padding: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      
+      // background-color: red;
+      .imgview3,.infoview3{
+        margin-bottom: 1rem;
+      }
       .imgview3 img{
         width: 100%;
         border-radius: 10px;
@@ -253,8 +689,120 @@ main {
           }
         }
       }
-   } 
-} //main end
+  } 
+
+    // ------------------view4--------------- //
+  .view4{
+      // display: flex;
+      // flex-direction: column;
+      // gap: 1rem;
+      // padding: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      
+      // background-color: red;
+      .imgview4,.infoview4{
+        margin-bottom: 1rem;
+      }
+      .imgview4 img{
+        width: 100%;
+        border-radius: 10px;
+      
+      }
+
+      .infoview4{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        background-color: #1E1E1E;
+        // margin-top: 1rem;
+        padding: 1.5rem 1.5rem;
+        border-radius: 10px;
+        gap: 2.5rem;
+
+        p{
+          font-family: robot;
+        }
+
+        .lv4-text{
+          @include flex-column(0.6rem);
+
+          h1 {
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+
+          p {
+            line-height: 1.5;
+            font-size: 1rem;
+            font-family: chillax;
+            color: #92918e;
+            opacity: 0.8;
+          }
+        }
+      }
+  }
+  h1{
+    padding:1rem 3rem ;
+  }
+
+  // view5 //
+  .view5{
+    display: flex;
+    gap:2rem;
+    width: 100%;
+    padding: 1rem;
+
+    .card1{
+      // object-fit: cover;
+      background-image: url(./imgs/team1.webp);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 0.7rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+
+      .icon,.cardinfo{
+        background-color: rgba(155, 155, 155, 0.259);
+        backdrop-filter: blur(5px);
+        border: 1px solid white;
+        border-radius: 0.7rem;
+        padding: 0.5rem;
+      }
+      
+      .icon{
+        width: fit-content;
+        border-radius: 50%;
+        
+      }
+      .icons{
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+      }
+
+      .cardinfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      
+      
+
+        P:nth-child(1){
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+   
+}//main end
+
 
 
 
@@ -304,19 +852,18 @@ main {
      flex-direction: row-reverse;
      align-items: stretch;
      gap: 1rem;
+    //  background-color: red;
 
     .imgview3{
       width: 50%;
       // background-color: red;
       padding: 0;
     }
-
     .imgview3 img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    
-  }
+    object-fit: cover;  
+    }
     .infoview3{
       width: 50%;
       // margin: 1rem 1rem;
@@ -328,19 +875,56 @@ main {
       padding: 1rem;
     }
 
-
     .infoview3 > p {
-    padding: 1.5rem 1rem; 
-    
-  }
+      padding: 1.5rem 1rem;   
+    }
 
-   .infoview3 .lv3-text h1 {
-    // margin-bottom: 1.5rem; 
-    font-size: 3rem;
+    .infoview3 .lv3-text h1 {
+      // margin-bottom: 1.5rem; 
+      font-size: 3rem;
+    }
+    .infoview3 .lv3-text p{
+      font-size: 2rem;
+    }
   }
-  .infoview3 .lv3-text p{
-    font-size: 2rem;
-  }
+  .view4{
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: stretch;
+     gap: 1rem;
+    //  background-color: red;
 
-  }
+    .imgview4{
+      width: 50%;
+      // background-color: red;
+      padding: 0;
+    }
+    .imgview4 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;  
+    }
+    .infoview4{
+      width: 50%;
+      // margin: 1rem 1rem;
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .infoview4 > p {
+      padding: 1.5rem 1rem;   
+    }
+
+    .infoview4 .lv4-text h1 {
+      // margin-bottom: 1.5rem; 
+      font-size: 3rem;
+    }
+    .infoview4 .lv4-text p{
+      font-size: 2rem;
+    }
+  } 
 }
